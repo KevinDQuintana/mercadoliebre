@@ -1,10 +1,10 @@
 .header {
 	align-items: center;
 	background-color: var(--clr-yellow);
-	height: 70px;
-	justify-content: space-between;
 	display: flex;
 	gap: 1rem;
+	height: 70px;
+	justify-content: space-between;
 	padding: 0.5rem 1rem;
 	position: relative;
 	z-index: 10;
@@ -16,7 +16,7 @@
 	/* max-width: 100px; */
 	/* max-height: 90%; */
 
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .header__logo-container a {
@@ -101,7 +101,7 @@
 	.header {
 		padding: 0.5rem 2%;
 
-		outline: 1px solid red;
+		/* outline: 1px solid red; */
 	}
 }
 
@@ -109,7 +109,11 @@
 	.header {
 		padding: 0.5rem 2%;
 
-		outline: 1px solid red;
+		/* outline: 1px solid red; */
+	}
+
+	.menu__item a {
+		font-size: 0.8rem;
 	}
 
 	.header__menu-button {
@@ -119,29 +123,27 @@
 	.header__menu {
 		background-color: var(--clr-yellow);
 		flex-direction: row;
-		gap: none;
+		gap: 0;
 		justify-content: space-between;
 		padding: 0.5rem 2%;
 		transform: translateY(0%);
 
-		outline: 1px solid red;
+		/* outline: 1px solid red; */
 	}
 
 	.menu-list {
 		display: flex;
 
-		outline: 1px solid red;
+		/* outline: 1px solid red; */
 	}
 
 	.menu__item a {
 		padding: 0.5rem 0.5rem;
 	}
-}
 
-@media (min-width: 768px) {
 	.menu__item:hover {
 		background-color: hsl(55, 90%, 57%);
-		transition: background-color 300ms ease-in-out;
+		transition: background-color 200ms ease-in-out;
 	}
 }
 
@@ -149,7 +151,7 @@
 	.header {
 		padding: 0.5rem 10%;
 
-		outline: 1px solid red;
+		/* outline: 1px solid red; */
 	}
 
 	.header__menu {
@@ -157,6 +159,7 @@
 	}
 
 	.menu__item a {
+		font-size: 0.9rem;
 		padding: 0.5rem 1rem;
 	}
 }
@@ -164,9 +167,8 @@
 @media (min-width: 1440px) {
 	.header {
 		padding: 0.5rem 15%;
-		/* max-width: 1100px; */
 
-		outline: 1px solid red;
+		/* outline: 1px solid red; */
 	}
 
 	.header__menu {
