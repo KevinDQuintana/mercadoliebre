@@ -1,0 +1,19 @@
+:root {
+	--clr-yellow: #fff159;
+	--clr-header-font: #333333e6;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	padding: 0;
+}
+
+img,
+svg,
+video {
+	max-width: 100%;
+	object-fit: cover;
+}

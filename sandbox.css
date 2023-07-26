@@ -1,0 +1,22 @@
+.container {
+	display: flex;
+	height: 200px;
+	width: 100%;
+
+	outline: 1px solid red;
+}
+
+.container-a {
+	background-color: palevioletred;
+	height: 100%;
+	width: 80%;
+
+	outline: 1px solid green;
+}
+.container-b {
+	background-color: paleturquoise;
+	height: 100%;
+	width: 20%;
+
+	outline: 1px solid blue;
+}
