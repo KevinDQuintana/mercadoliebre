@@ -8,24 +8,64 @@
 	<link rel="stylesheet" href="/public/css/style.css">
 	<link rel="stylesheet" href="/public/css/header.css">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<header class="header">
-		<div class="header__logo-container">
-			<a href="#">
-				<img src="/public/img/logo-mercado-liebre-small.svg" alt="">
-			</a>
+	<header>
+		<div class="header">
+			<div class="header__logo-container">
+				<a href="#">
+					<img src="/public/img/logo-mercado-liebre-small.svg" alt="">
+				</a>
+			</div>
+			<form class="header__search-area" action="" method="get">
+				<input type="text" name="search-bar">
+				<button type="submit">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</form>
+			<div class="header__menu-button">
+				<i class="fa-solid fa-bars"></i>
+			</div>
 		</div>
-		<form class="header__search-area" action="" method="get">
-			<input type="text" name="search-bar">
-			<button type="submit">
-				<i class="fa-solid fa-magnifying-glass"></i>
-			</button>
-		</form>
-		<div class="header__menu-button">
-			<i class="fa-solid fa-bars"></i>
+		<div class="header__menu">
+			<ul>
+				<!-- <a href="">
+					<div class="menu__item">Ofertas</div>
+				</a>
+				<a href="">
+					<div class="menu__item">Tiendas Oficiales</div>
+				</a>
+				<a href="">
+					<div class="menu__item">Vender</div>
+				</a>
+				<a href="">
+					<div class="menu__item">Ayuda</div>
+				</a> -->
+				<li class="menu__item">
+					<a href="#">Ofertas</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Tiendas Oficiales</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Vender</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Ayuda</a>
+				</li>
+			</ul>
+			<ul>
+				<li class="menu__item"><a href="#">Registrarse</a></li>
+				<li class="menu__item"><a href="#">Ingresar</a></li>
+				<li class="menu__item"><a href="#">Mis Compras</a></li>
+			</ul>
 		</div>
 	</header>
 	<main></main>
