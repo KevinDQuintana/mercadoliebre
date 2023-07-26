@@ -1,0 +1,136 @@
+.section-paragraph {
+	padding-bottom: 1rem;
+	/* padding-left: 5%; */
+	padding-top: 1rem;
+	text-align: left;
+}
+
+.product-container {
+	display: grid;
+	gap: 1rem;
+	/* grid-template-columns: repeat(auto-fit, minmax(300px, 350px)); */
+	/* grid-template-columns: repeat(auto-fit, 200px); */
+	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+	grid-template-columns: repeat(auto-fit, 200px);
+	/* margin: 2rem 1rem; */
+	/* margin-left: 1rem; */
+	/* margin-right: 1rem; */
+	margin: 0 0.1rem;
+	/* max-width: 200px; */
+	justify-content: center;
+
+	outline: 1px solid red;
+}
+
+.product {
+	background-color: #ffffff;
+	border-radius: 10px;
+	/* margin: 0 1rem; */
+	overflow: hidden;
+
+	outline: 1px solid red;
+}
+
+.product__details {
+	border-top: 1px solid hsl(0, 0%, 0%, 0.15);
+	padding: 1.2rem 0.8rem;
+	position: relative;
+
+	/* outline: 1px solid red; */
+}
+
+.truck-container {
+	aspect-ratio: 1;
+	background-color: #ffffff;
+	border: 1px solid #008000;
+	border-radius: 50px;
+	color: #008000;
+	padding: 0.6rem;
+	position: absolute;
+	right: 1rem;
+	top: -1.425rem;
+
+	/* outline: 1px solid red; */
+}
+
+.price-disct-container {
+	display: flex;
+	align-items: baseline;
+	gap: 0.3rem;
+
+	/* outline: 1px solid red; */
+}
+
+.product__price {
+	font-size: 1.5rem;
+}
+
+.product__discount {
+	color: #008000;
+}
+
+.product__description {
+	/* font-size: 1.2rem; */
+	font-size: 1rem;
+	padding-top: 1rem;
+	text-align: left;
+}
+
+@media (min-width: 320px) {
+	main {
+		/* margin: auto 0%; */
+		/* padding: auto 10%; */
+
+		outline: 1px solid red;
+	}
+
+	.container {
+		margin: auto 2%;
+	}
+
+	.product-container {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+}
+
+@media (min-width: 768px) {
+	.section-paragraph {
+		margin: auto 0%;
+	}
+
+	.product-container {
+		grid-template-columns: repeat(auto-fit, 200px);
+	}
+}
+
+@media (min-width: 1024px) {
+	main {
+		margin: auto 10%;
+
+		outline: 1px solid red;
+	}
+
+	.container {
+		margin: 0;
+	}
+
+	.product-container {
+		grid-template-columns: repeat(auto-fit, 200px);
+	}
+}
+
+@media (min-width: 1440px) {
+	main {
+		margin: auto 15%;
+		/* margin: auto auto; */
+		/* max-width: 1100px; */
+
+		outline: 1px solid red;
+	}
+
+	.product-container {
+		grid-template-columns: repeat(auto-fit, 200px);
+	}
+}
+/* min-width es mobile first */
+/* max-width es desktop first */
