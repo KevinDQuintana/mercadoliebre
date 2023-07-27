@@ -8,4 +8,4 @@ app.get('/', function (req, res) {
 	res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
-app.listen(PORT, () => console.log('Servidor Iniciado.'));
+app.listen(PORT, () => console.log(`server started at port: ${PORT}`));
