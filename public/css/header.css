@@ -40,6 +40,7 @@
 
 .header__search-area input {
 	border: none;
+	border-right: 1px solid hsla(0, 0%, 0%, 0.2);
 	font-size: 1rem;
 	height: 80%;
 	outline: none;
@@ -52,8 +53,8 @@
 .header__search-area button {
 	background-color: transparent;
 	border: none;
-	border-left: 1px solid hsla(0, 0%, 0%, 0.2);
-	height: 80%;
+	cursor: pointer;
+	height: 100%;
 	padding-right: 5px;
 	width: 20%;
 
@@ -161,6 +162,10 @@
 	.menu__item a {
 		font-size: 0.9rem;
 		padding: 0.5rem 1rem;
+	}
+
+	.header__search-area button:hover {
+		background-color: #21aaff;
 	}
 }
 

@@ -42,18 +42,21 @@
 		padding: 1rem;
 	}
 
+	.footer-icons {
+		padding: 0;
+		padding-bottom: 1rem;
+	}
+}
+
+@media (min-width: 1024px) {
 	.footer__article:hover {
-		box-shadow: 0 0 10px 10px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.5);
 		transition: box-shadow 300ms ease-in-out;
 	}
 
 	.footer__article:hover .footer-icons {
 		color: #000000;
-	}
-
-	.footer-icons {
-		padding: 0;
-		padding-bottom: 1rem;
+		transition: color 300ms ease-in-out;
 	}
 }
 

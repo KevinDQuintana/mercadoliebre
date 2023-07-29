@@ -118,6 +118,15 @@
 		margin: 0;
 	}
 
+	.product {
+		cursor: pointer;
+	}
+
+	.product:hover {
+		box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.5);
+		transition: box-shadow 300ms ease-in-out;
+	}
+
 	.product-container {
 		grid-template-columns: repeat(auto-fit, 200px);
 	}
