@@ -10,6 +10,7 @@
 }
 
 .footer__article {
+	border-radius: 5px;
 	width: 80%;
 
 	/* outline: 1px solid red; */
@@ -28,12 +29,31 @@
 	}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 	.footer {
+		align-items: start;
 		flex-direction: row;
 		gap: 1rem;
 		margin: 1rem 10%;
 		margin-bottom: 3rem;
+	}
+
+	.footer__article {
+		padding: 1rem;
+	}
+
+	.footer__article:hover {
+		box-shadow: 0 0 10px 10px hsla(0, 0%, 0%, 0.3);
+		transition: box-shadow 300ms ease-in-out;
+	}
+
+	.footer__article:hover .footer-icons {
+		color: #000000;
+	}
+
+	.footer-icons {
+		padding: 0;
+		padding-bottom: 1rem;
 	}
 }
 
