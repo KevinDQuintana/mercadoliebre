@@ -58,6 +58,8 @@
 	padding-right: 5px;
 	width: 20%;
 
+	transition: 200ms ease-in-out;
+
 	/* outline: 1px solid red; */
 }
 
@@ -148,6 +150,12 @@
 	}
 }
 
+@media (min-width:768px) {
+	.header__menu {
+		position: static;
+	}
+}
+
 @media (min-width: 1024px) {
 	.header {
 		padding: 0.5rem 10%;
@@ -165,7 +173,9 @@
 	}
 
 	.header__search-area button:hover {
-		background-color: #21aaff;
+		background-color: #2190ff;
+		color: #ffffff;
+		transition: 200ms ease-in-out;
 	}
 }
 
