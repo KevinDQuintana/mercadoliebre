@@ -4,10 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Registrarse</title>
+	<title>MercadoLiebre - Iniciar Sesion</title>
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/header.css">
-	<link rel="stylesheet" href="/css/signin.css">
+	<link rel="stylesheet" href="/css/signup.css">
 	<link rel="stylesheet" href="/css/footer.css">
 	<script src="/js/index.js" defer></script>
 
@@ -53,106 +53,23 @@
 				</li>
 			</ul>
 			<ul class="menu-list">
-				<li class="menu__item"><a href="/signin">Creá tu cuenta</a></li>
-				<li class="menu__item"><a href="#">Ingresá</a></li>
+				<li class="menu__item"><a href="/signup">Creá tu cuenta</a></li>
+				<li class="menu__item"><a href="/signin">Ingresá</a></li>
 				<li class="menu__item"><a href="#">Mis Compras</a></li>
 			</ul>
 		</div>
 	</header>
-	<main class="main">
+	<main>
 		<div class="container">
-			<form action="" method="post">
-				<input class="texto" type="text" name="name" id="name" placeholder="Nombre/s">
-				<input class="texto" type="text" name="surname" id="surname" placeholder="Apellido/s">
-				<div class="birthdate">
-					<label class="label" for="date">Fecha de nacimiento</label>
-					<input class="texto" type="date" name="date" id="date">
-				</div>
-				<input class="texto" type="text" name="addres" id="addres" placeholder="Domicilio">
-				<div class="user-profile">
-					<label class="label">Perfil de usuario</label>
-					<div>
-						<label for="buy">Comprar</label>
-						<input type="radio" name="userprofile" id="buy">
-
-						<label for="sell">Vender</label>
-						<input type="radio" name="userprofile" id="sell">
-					</div>
-				</div>
-				<div class="interest">
-					<label class="label">Categorias de interes</label>
-					<div class="options">
-						<li>
-							<label for="electro">Electro</label>
-							<input type="checkbox" name="electro" id="electro">
-						</li>
-
-						<li>
-							<label for="fashion">Moda</label>
-							<input type="checkbox" name="fashion" id="fashion">
-						</li>
-
-						<li>
-							<label for="home">Hogar</label>
-							<input type="checkbox" name="home" id="home">
-						</li>
-
-						<li>
-							<label for="toystore">Jugueteria</label>
-							<input type="checkbox" name="toystore" id="toystore">
-						</li>
-
-						<li>
-							<label for="health">Vida sana</label>
-							<input type="checkbox" name="health" id="health">
-						</li>
-					</div>
-				</div>
-				<div class="profile-pic">
-					<label class="label">Foto de usuario</label>
-					<input type="file" name="userpic" id="userpic">
-				</div>
-				<input class="texto" type="email" name="email" id="email" placeholder="E-mail">
-				<input class="texto" type="text" name="username" id="username" placeholder="Nombre de usuario">
-				<input class="texto" type="password" name="password" id="password" placeholder="Contraseña">
-				<input class="texto" type="password" name="password-confirm" id="password-confirm"
-					placeholder="Confirme su contraseña">
+			<form action="/signin" method="post">
+				<input class="texto" type="text" name="username" id="username" placeholder="Nombre de usuario" minlength="5" required>
+				<input class="texto" type="password" name="password" id="password" placeholder="Contraseña" minlength="1" required>
 				<div class="form-buttons">
-					<button type="submit">Enviar</button>
-					<button type="reset">Borrar</button>
+					<button type="submit">Entrar</button>
 				</div>
 			</form>
 		</div>
 	</main>
-	<footer class="footer">
-		<article class="footer__article">
-			<i class="fa-solid fa-credit-card footer-icons"></i>
-			<h3>Pagá con tarjeta o en efectivo</h3>
-			<p>
-				Con MercadoLiebre Cash, tenés cuotas
-				sin interés con tarjeta o efectivo en
-				puntos de pago. ¡Y siempre es seguro!
-			</p>
-		</article>
-		<article class="footer__article">
-			<i class="fa-solid fa-gift footer-icons"></i>
-			<h3>Envio gratis desde $2.500</h3>
-			<p>
-				Solo por estar registrado en MercadoLiebre
-				tenés envios gratis en miles de productos.
-				Es un beneficio de MercadoPuntos.
-			</p>
-		</article>
-		<article class="footer__article">
-			<i class="fa-solid fa-user-shield footer-icons"></i>
-			<h3>Seguridad, de principio a fin</h3>
-			<p>
-				¿No te gusta? ¡Devolvelo! En MercadoLiebre,
-				no hay nada que no puedas hacer, porque estás
-				siempre protegido.
-			</p>
-		</article>
-	</footer>
 </body>
 
 </html>
