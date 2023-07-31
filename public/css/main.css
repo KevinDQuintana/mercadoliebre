@@ -127,6 +127,15 @@
 		transition: box-shadow 300ms ease-in-out;
 	}
 
+	.truck-container {
+		transition: transform 300ms ease-in-out;
+	}
+
+	.product:hover .truck-container {
+		transform: rotate(-90deg);
+		transition: transform 300ms ease-in-out;
+	}
+
 	.product-container {
 		grid-template-columns: repeat(auto-fit, 200px);
 	}
