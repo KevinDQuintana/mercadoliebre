@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/header.css">
 	<link rel="stylesheet" href="/css/signup.css">
+	<link rel="stylesheet" href="/css/signin.css">
 	<link rel="stylesheet" href="/css/footer.css">
 	<script src="/js/index.js" defer></script>
 
@@ -40,7 +41,7 @@
 		<div class="header__menu" data-visible="false">
 			<ul class="menu-list">
 				<li class="menu__item">
-					<a href="#">Ofertas</a>
+					<a href="#offers">Ofertas</a>
 				</li>
 				<li class="menu__item">
 					<a href="#">Tiendas Oficiales</a>
@@ -58,18 +59,54 @@
 				<li class="menu__item"><a href="#">Mis Compras</a></li>
 			</ul>
 		</div>
+		<p>Comprá en cuotas y sin tarjeta de crédito</p>
 	</header>
 	<main>
 		<div class="container">
+			<h2>Inicia sesion en tu cuenta</h2>
 			<form action="/signup" method="post">
-				<input class="texto" type="text" name="username" id="username" placeholder="Nombre de usuario" minlength="5" required>
-				<input class="texto" type="password" name="password" id="password" placeholder="Contraseña" minlength="1" required>
+				<input class="texto" type="text" name="username" id="username" placeholder="Nombre de usuario"
+					minlength="5" required>
+				<input class="texto" type="password" name="password" id="password" placeholder="Contraseña"
+					minlength="1" required>
 				<div class="form-buttons">
 					<button type="submit">Entrar</button>
 				</div>
 			</form>
 		</div>
 	</main>
+	<footer class="footer">
+		<section>
+			<article class="footer__article">
+				<i class="fa-solid fa-credit-card footer-icons"></i>
+				<h3>Pagá con tarjeta o en efectivo</h3>
+				<p>
+					Con MercadoLiebre Cash, tenés cuotas
+					sin interés con tarjeta o efectivo en
+					puntos de pago. ¡Y siempre es seguro!
+				</p>
+			</article>
+			<article class="footer__article">
+				<i class="fa-solid fa-gift footer-icons"></i>
+				<h3>Envio gratis desde $2.500</h3>
+				<p>
+					Solo por estar registrado en MercadoLiebre
+					tenés envios gratis en miles de productos.
+					Es un beneficio de MercadoPuntos.
+				</p>
+			</article>
+			<article class="footer__article">
+				<i class="fa-solid fa-user-shield footer-icons"></i>
+				<h3>Seguridad, de principio a fin</h3>
+				<p>
+					¿No te gusta? ¡Devolvelo! En MercadoLiebre,
+					no hay nada que no puedas hacer, porque estás
+					siempre protegido.
+				</p>
+			</article>
+		</section>
+		<p class="copy">Copyright © 1999-2023 MercadoLiebre S.R.L.</p>
+	</footer>
 </body>
 
 </html>

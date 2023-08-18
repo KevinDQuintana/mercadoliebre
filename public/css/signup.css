@@ -1,10 +1,15 @@
 .container {
 	align-items: center;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	padding: 1rem 0.5rem;
 
 	/* border: 1px solid red; */
+}
+
+.container h2 {
+	padding: 1rem;
 }
 
 .label {
